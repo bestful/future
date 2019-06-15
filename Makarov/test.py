@@ -14,3 +14,5 @@ print(linprog(c, A_ub, b_ub, A_eq, b_eq))
 stop = time.time()
 print ("Время :")
 print(stop - start)
+
+# In[]
