@@ -1,6 +1,6 @@
 
 
-# Алгоритмы
+# [x] Алгоритмы
 
 ## Сравнение алгоримов Решения транспортной задачи c реализацией на C#
 https://github.com/BioQwer/Transportation_theory_vs_M_metod
@@ -15,6 +15,10 @@ https://habr.com/ru/post/330648/
 ## Интересно для поставок партиями
 https://habr.com/ru/post/208990/
 
+## HERE
+https://developer.here.com/api-explorer/maps-js/
+
+
 # Документация
 
 ## Documentation of PulP
@@ -25,6 +29,3 @@ https://pythonhosted.org/PuLP/
 
 ## SciPy.optimize docomentation
 https://docs.scipy.org/doc/scipy/reference/tutorial/optimize.html
-
-## HERE
-https://developer.here.com/api-explorer/maps-js/
