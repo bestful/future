@@ -29,3 +29,10 @@ https://pythonhosted.org/PuLP/
 
 ## SciPy.optimize docomentation
 https://docs.scipy.org/doc/scipy/reference/tutorial/optimize.html
+
+##HERE
+https://developer.here.com/api-explorer/maps-js/
+
+##adding information on click for marker
+https://developer.here.com/api-explorer/maps-js/v3.0/infoBubbles/open-infobubble
+https://docs.scipy.org/doc/scipy/reference/tutorial/optimize.html
