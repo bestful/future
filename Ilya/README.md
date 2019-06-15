@@ -46,6 +46,7 @@
   - *manufacturer*
 
 - [x] companyFor_person
+  - id
   - person_id (director)
   - name
 
@@ -57,11 +58,11 @@
 
 - [ ] recipientIn_location
   - location_id
-  - company
+  - company_id
 
 - [ ] supplierIn_location
   - location_id
-  - company
+  - company_id
 
 
 ## Связи
