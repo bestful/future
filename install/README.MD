@@ -2,9 +2,7 @@
 - https://git-scm.com/download/win
 - https://code.visualstudio.com/Download
 
-## Копирование репозитория
-- Заходим в ~/Documents 
-- git clone git@github.com:bestful/future.git
+# Организуем подключение
 
 ## Глобальная настройка
 - git config --global user.name "Ilya Kataev"
@@ -21,3 +19,6 @@ Filename: id_rsa
 Проверка
 - ssh -vT git@github.com
 
+# Копирование репозитория
+- Заходим в ~/Documents 
+- git clone git@github.com:bestful/future.git
