@@ -2,6 +2,10 @@
 - https://git-scm.com/download/win
 - https://code.visualstudio.com/Download
 
+## Копирование репозитория
+- Заходим в ~/Documents 
+- git clone git@github.com:bestful/future.git
+
 ## Глобальная настройка
 - git config --global user.name "Ilya Kataev"
 - git config --global user.email "kataev.i@gmail.com"
