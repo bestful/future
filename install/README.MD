@@ -26,3 +26,6 @@ github.com -> Settings -> ssh keys -> SSH and GPG keys -> New ssh key
 # Копирование репозитория
 - Заходим в ~/Documents 
 - git clone git@github.com:bestful/future.git
+
+## Согласиться на приглашение
+- Перейти по ссылке https://github.com/bestful/future/invitations
