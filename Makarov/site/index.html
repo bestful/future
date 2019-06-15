@@ -29,6 +29,18 @@ function addMarkersToMap(map) {
   map.addObject(oneMarker);
 }
 
+function setUpClickListener(map) {
+  // Attach an event listener to map display
+  // obtain the coordinates and display in an alert box.
+  map.addEventListener('tap', function (evt) {
+    var coord = map.screenToGeo(evt.currentPointer.viewportX,
+            evt.currentPointer.viewportY);
+    alert('Clicked at ' + Math.abs(coord.lat.toFixed(4)) +
+        ((coord.lat > 0) ? 'N' : 'S') +
+        ' ' + Math.abs(coord.lng.toFixed(4)) +
+         ((coord.lng > 0) ? 'E' : 'W'));
+  });
+}
 /**
  * Boilerplate map initialization code starts below:
  */
@@ -60,6 +72,7 @@ var ui = H.ui.UI.createDefault(map, defaultLayers);
 // Now use the map as required...
 moveMapToSimferopol(map);
 addMarkersToMap(map);
+setUpClickListener(map);
   </script>
 </body>
 </html>
