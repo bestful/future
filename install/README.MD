@@ -13,6 +13,7 @@
 **Если его нет в ~/Documents, то**
 - Заходим в ~/.ssh
 - ssh-keygen -t rsa -b 4096 -C "kataev.i@gmail.com"
+
 Filename: id_rsa
 
 ## Проверка авторизации
