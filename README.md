@@ -69,16 +69,19 @@ x делаем крутые инновации
 
 ## Видовые таблицы
 
-- user
+- user (person + )
+- place (location + tags)
+- 
 
 
 ## Поля
-
 
 Поля person:
 - Имя
 - Пароль
 
+## Связи
+
 Поля со связями
-- person-> contact
+- person-> contactFor_person
 - location -> link (s)
