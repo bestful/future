@@ -16,6 +16,9 @@
 
 Filename: id_rsa
 
+## Добавление ключа в github
+github.com -> Settings -> ssh keys -> SSH and GPG keys -> New ssh key
+
 ## Проверка авторизации
 Проверка
 - ssh -vT git@github.com
