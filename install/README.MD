@@ -11,7 +11,7 @@
 ## Генерация ключа
 
 **Если его нет в ~/Documents, то**
-- Заходим в ~/Documents
+- Заходим в ~/.ssh
 - ssh-keygen -t rsa -b 4096 -C "kataev.i@gmail.com"
 Filename: id_rsa
 
