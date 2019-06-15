@@ -49,7 +49,7 @@
 
 - [X] stockFor_productIn_location:
   - product_id
-  - location
+  - location_id
   - count
   - price
 
