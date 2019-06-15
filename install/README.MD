@@ -7,8 +7,10 @@ git config --global user.name "Ilya Kataev"
 git config --global user.email "kataev.i@gmail.com"
 
 ## Генерация ключа
+
+**Если его нет**
 Заходим в ~/Documents
-Если нет 
+
 ssh-keygen -t rsa -b 4096 -C "kataev.i@gmail.com"
 Filename: id_rsa
 
