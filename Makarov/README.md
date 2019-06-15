@@ -17,3 +17,5 @@ https://habr.com/ru/post/330648/
 https://docs.scipy.org/doc/scipy/reference/tutorial/optimize.html
 
 
+##интересно для поставок партиями
+https://habr.com/ru/post/208990/
