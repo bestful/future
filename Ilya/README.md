@@ -55,6 +55,14 @@
   - count
   - price
 
+- [ ] recipientIn_location
+  - location_id
+  - company
+
+- [ ] supplierIn_location
+  - location_id
+  - company
+
 
 ## Связи
 
