@@ -56,11 +56,11 @@
   - count
   - price
 
-- [ ] recipientIn_location
+- [x] recipientIn_location
   - location_id
   - company_id
 
-- [ ] supplierIn_location
+- [x] supplierIn_location
   - location_id
   - company_id
 
@@ -70,6 +70,6 @@
 Поля со связями
 - person-> contactFor_person
 - location -> linkIn_System
-- stockFor_productIn_location
-- recipient (location)
-- supplier (supplier)
+- product -> stockFor_productIn_location
+- location -> recipientIn_location
+- location -> supplierIn_location
