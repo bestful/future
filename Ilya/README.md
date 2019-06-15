@@ -16,6 +16,9 @@
 
 - contactFor_person
 - companyFor_person
+- stockFor_productIn_location
+- recipientIn_location
+- supplierIn_location
 
 *Кешируемые:*
 (данные поля можно присобачить ко всему)
@@ -25,7 +28,6 @@
 
 - user (person + contact)
 - place (location + tags)
-- access ()
 
 
 ## Поля
@@ -60,3 +62,5 @@
 - person-> contactFor_person
 - location -> linkIn_System
 - stockFor_productIn_location
+- recipient (location)
+- supplier (supplier)
