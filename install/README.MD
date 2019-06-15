@@ -1,4 +1,4 @@
-## Утсановка
+## Установка
 - https://git-scm.com/download/win
 - https://code.visualstudio.com/Download
 
