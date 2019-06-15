@@ -36,3 +36,6 @@ https://developer.here.com/api-explorer/maps-js/
 ##adding information on click for marker
 https://developer.here.com/api-explorer/maps-js/v3.0/infoBubbles/open-infobubble
 https://docs.scipy.org/doc/scipy/reference/tutorial/optimize.html
+
+##route into point A to B
+https://developer.here.com/api-explorer/maps-js/v3.0/servicesRouting/map-with-route-from-a-to-b
