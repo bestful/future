@@ -88,9 +88,9 @@ Future
   - name
   - *manufacturer*
 
-- [ ] companyFor_person
+- [x] companyFor_person
   - person_id (director)
-  - 
+  - name
 - 
 - Руководитель:	ГЕНЕРАЛЬНЫЙ ДИРЕКТОР КОБЫЛЯНСКИЙ МАКСИМ ВЛАДИМИРОВИЧ
 ИНН / КПП:	7802599293 / 780201001
