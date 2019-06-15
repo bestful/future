@@ -16,3 +16,4 @@ https://habr.com/ru/post/330648/
 # SciPy.optimize docomentation
 https://docs.scipy.org/doc/scipy/reference/tutorial/optimize.html
 
+
