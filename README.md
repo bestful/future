@@ -49,7 +49,7 @@ x делаем крутые инновации
 
 # Реляционная модель
 
-## Таблицы
+## Таблицы основные
 
 *Основные*
 - person
@@ -57,6 +57,7 @@ x делаем крутые инновации
 - product
 - company
 
+## Таблицы другие
 *Дополнительные:*
 
 (данные поля используются для функциональности)
@@ -71,17 +72,34 @@ x делаем крутые инновации
 
 - user (person + )
 - place (location + tags)
-- 
+- access
 
 
 ## Поля
 
-Поля person:
+person:
 - Имя
 - Пароль
+
+location:
+- Ширина
+- Долгота
+- *Адрес*
+
+product:
+- name
+- *manufacturer*
+
+stockFor_productIn_location:
+- product_id
+- location
+- count
+- price
+
 
 ## Связи
 
 Поля со связями
 - person-> contactFor_person
-- location -> link (s)
+- location -> linkIn_System
+- stockFor_productIn_location
