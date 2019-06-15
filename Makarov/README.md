@@ -25,3 +25,6 @@ https://pythonhosted.org/PuLP/
 
 ## SciPy.optimize docomentation
 https://docs.scipy.org/doc/scipy/reference/tutorial/optimize.html
+
+##HERE
+https://developer.here.com/api-explorer/maps-js/
