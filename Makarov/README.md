@@ -39,3 +39,7 @@ https://docs.scipy.org/doc/scipy/reference/tutorial/optimize.html
 
 ##route into point A to B
 https://developer.here.com/api-explorer/maps-js/v3.0/servicesRouting/map-with-route-from-a-to-b
+
+##HERE info
+    app_id: 'icDUzRIlkkoHxVh3ZWBc',
+    app_code: 'xzPGxFrpDl1aStROU6d7jA'
