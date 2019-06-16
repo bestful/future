@@ -30,7 +30,7 @@ namespace webapi.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseMySQL("server=localhost;port=3306;user=root;password=test;database=lofy");
+                optionsBuilder.UseMySQL("server=localhost;port=3306;user=root;password=test;database=lofy;");
             }
         }
 
