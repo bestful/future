@@ -1,0 +1,21 @@
+.nav{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+
+    font-family: SF UI Display;
+    font-size: 26px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.41em;
+
+    color: #000000;
+}
