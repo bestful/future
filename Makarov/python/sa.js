@@ -78,7 +78,7 @@ function find_path(points){
 //     startT - температура с которой начинаем
 //     endT - температура, достигнув которой закончим цикл
 //
-function run(points, startT=10, endT= 0.0001){
+function run_an(points, startT=10, endT= 0.0001){
     let from_x = 0;
     let finish_x = 80;
     let from_y = 0;
@@ -139,5 +139,5 @@ function run(points, startT=10, endT= 0.0001){
 }
 
 
-let arr = [[0, 0, 1], [5, 1, 2], [30, 50, 3], [4, 4, 4], [90, 80, 5], [1, 1, 6], [60, 60, 7]];
-console.log(run(arr));
+// let arr = [[0, 0, 1], [5, 1, 2], [30, 50, 3], [4, 4, 4], [90, 80, 5], [1, 1, 6], [60, 60, 7]];
+// console.log(run_an(arr));
