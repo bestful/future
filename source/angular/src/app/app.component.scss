@@ -1,3 +1,16 @@
+// Default classes
+
+.block-image { grid-area: block-image; }
+.block-title { grid-area: block-title; }
+.block-content { grid-area: block-content; }
+.block-button { grid-area: block-button; }
+
+img{
+    width: 100%;
+}
+
+
+// Sections
 .logo {
     display: flex;
     justify-content: center;
@@ -9,3 +22,38 @@
     }
 }
 
+.main{
+    padding-left: 140px;
+    padding-right: 140px;
+    > .block {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "block-image block-title" "block-image block-content" "block-image block-button";
+        
+        .block-title{
+            font-family: SF UI Display;
+            font-size: 24px;
+            line-height: 29px;
+            color: #6C63FF;
+        }
+
+        .block-content{
+            font-family: SF UI Display;
+            font-size: 36px;
+            line-height: 43px;
+        }
+    }
+}
+
+.advantages{
+
+}
+
+.active{
+
+}
+
+.footer{
+    
+}
