@@ -53,3 +53,9 @@ https://stackoverflow.com/questions/41011700/how-to-generate-controller-using-do
 
 
 dotnet-aspnet-codegenerator -p "C:\Users\root\Documents\future\source\webapi" controller -name ContactforPersonController -api -m webapi.Models.ContactforPerson -dc lofyContext -outDir Controllers -namespace webapi.Controllers
+
+# angular
+
+**установка cli**
+
+    npm install -g @angular/cli
