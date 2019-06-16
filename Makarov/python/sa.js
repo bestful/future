@@ -44,8 +44,8 @@ function CalculateEnergy(points){
 
 // создание нового сосояния, на основе points; выбирается случайный промежуток в массиве и реверсируется
 function GenerateStateCandidate(points){
-    let i = Math.floor(Math.random() * (points.length - 0)) + 0;
-    let j = Math.floor(Math.random() * (points.length - 0)) + 0;
+    let i = Math.floor(Math.random() * (points.length+1 - 0)) + 0;
+    let j = Math.floor(Math.random() * (points.length+1 - 0)) + 0;
 
     if (i > j){
         let t = i;
@@ -59,12 +59,13 @@ function GenerateStateCandidate(points){
     b = b.reverse();
 
     let c = points.slice(j, points.length)
-    return a + b + c
+    let res = a.concat(b, c);
+    return res;
 }
 
 // найти путь по номерам координат из points, возвращает список последовательно идущих номеров
 function find_path(points){
-    path = [];
+    let path = [];
     for (let i=0; i<points.length; i++){
         path.push(points[i][2]);
     }
@@ -121,8 +122,8 @@ function run(points, startT=10, endT= 0.0001){
         }
         // "ловля" лучшего решения
         if (currentEnergy < BestEnergy){
-            let BestEnergy = currentEnergy;
-            let BestPath = state;
+            BestEnergy = currentEnergy;
+            BestPath = state;
         }
         // изменение температуры происходит согласно заданой функции
         T = DecreaseTemperature(startT, i);
@@ -138,5 +139,5 @@ function run(points, startT=10, endT= 0.0001){
 }
 
 
-let arr = [[0, 0, 1], [5, 1, 2], [3, 5, 3], [4, 4, 4]];
+let arr = [[0, 0, 1], [5, 1, 2], [30, 50, 3], [4, 4, 4], [90, 80, 5], [1, 1, 6], [60, 60, 7]];
 console.log(run(arr));
