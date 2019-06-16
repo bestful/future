@@ -12,7 +12,9 @@
 <body>
 
   <div id="map"></div>
-  <div id="panel"></div>
+  <div id="panel">
+    <input type="button" value="Построить маршрут" id="run">
+  </div>
 
   <script  type="text/javascript" charset="UTF-8" >
 /**
@@ -112,8 +114,8 @@ var defaultLayers = platform.createDefaultLayers({
 //Step 2: initialize a map - this map is centered over Berlin
 var map = new H.Map(mapContainer,
   defaultLayers.normal.map,{
-  center: {lat:52.5160, lng:13.3779},
-  zoom: 13,
+  center: {lat:44.9382, lng:34.0696},
+  zoom: 10,
   pixelRatio: pixelRatio
 });
 
@@ -215,13 +217,41 @@ function addManueversToMap(route){
   map.addObject(group);
 }
 
+//слушаем события нажатия на карту, и при клике ставим маркер и добавляем координаты точки в массив
+let arr_n_cor = []
+function setUpClickListener(map) {
+  
+  map.addEventListener('tap', function (evt) {
+    var coord = map.screenToGeo(evt.currentPointer.viewportX,
+            evt.currentPointer.viewportY);
+
+    let x = Math.abs(coord.lat.toFixed(4));
+    let y =Math.abs(coord.lng.toFixed(4))
+    arr_n_cor.push(''+ x +','+ y);
+    var tempMarker = new H.map.Marker({lat:x, lng:y});
+    map.addObject(tempMarker)
+    console.log(arr_n_cor);
+    // alert('Clicked at ' + Math.abs(coord.lat.toFixed(4)) +
+    //     ((coord.lat > 0) ? 'N' : 'S') +
+    //     ' ' + Math.abs(coord.lng.toFixed(4)) +
+    //      ((coord.lng > 0) ? 'E' : 'W'));
+  });
+}
+
 Number.prototype.toMMSS = function () {
   return  Math.floor(this / 60)  +' minutes '+ (this % 60)  + ' seconds.';
 }
 
+//прослушка события кнопки, при нажатии строим 
+const bot = document.querySelector('#run');
+bot.addEventListener('click', function(){ 
+  calculateRouteFromAtoB (platform, arr_n_cor);
+})
 // Now use the map as required...
-let arr_points = ['52.5160,13.3779', '52.5206,13.3862', '52.53,13.39',];
-calculateRouteFromAtoB (platform, arr_points);
+setUpClickListener(map);
+
+// let arr_points = [ "44.9379,34.0721",  "44.9386,34.0667" ];
+// calculateRouteFromAtoB (platform, arr_points);
   </script>
 </body>
 </html>
