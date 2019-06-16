@@ -1,0 +1,11 @@
+.logo {
+    display: flex;
+    justify-content: center;
+
+    $delta : 40px;
+    img{
+        margin-top: $delta;
+        margin-bottom: $delta;
+    }
+}
+
