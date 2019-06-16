@@ -9,6 +9,7 @@ img{
     width: 100%;
 }
 
+$purple: #6C63FF;
 
 // Sections
 .logo {
@@ -35,7 +36,7 @@ img{
             font-family: SF UI Display;
             font-size: 24px;
             line-height: 29px;
-            color: #6C63FF;
+            color: $purple;
         }
 
         .block-content{
@@ -47,13 +48,25 @@ img{
 }
 
 .advantages{
-
+    span{
+        font-family: SF UI Display;
+        font-size: 36px;
+        line-height: 43px;
+        text-align: center;
+    }
 }
 
 .active{
+    font-family: SF UI Display;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
 
+    color: $purple;
 }
 
 .footer{
-    
+    font-family: SF UI Text;
+    font-size: 18px;
+    line-height: 21px;
 }
