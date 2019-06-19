@@ -54,7 +54,47 @@ https://stackoverflow.com/questions/41011700/how-to-generate-controller-using-do
 
 dotnet-aspnet-codegenerator -p "C:\Users\root\Documents\future\source\webapi" controller -name ContactforPersonController -api -m webapi.Models.ContactforPerson -dc lofyContext -outDir Controllers -namespace webapi.Controllers
 
-# angular
+# установка генератора документации Swagger
+https://github.com/domaindrivendev/Swashbuckle.AspNetCore
+
+Install the standard Nuget package into your ASP.NET Core application.
+
+Package Manager : Install-Package Swashbuckle.AspNetCore
+CLI : dotnet add package Swashbuckle.AspNetCore
+In the ConfigureServices method of Startup.cs, register the Swagger generator, defining one or more Swagger documents.
+
+using Swashbuckle.AspNetCore.Swagger;
+
+services.AddMvc();
+
+services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+});
+Ensure your API actions and non-route parameters are decorated with explicit "Http" and "From" bindings.
+
+[HttpPost]
+public void CreateProduct([FromBody]Product product)
+...
+
+[HttpGet]
+public IEnumerable<Product> SearchProducts([FromQuery]string keywords)
+...
+NOTE: If you omit the explicit parameter bindings, the generator will describe them as "query" params by default.
+
+In the Configure method, insert middleware to expose the generated Swagger as JSON endpoint(s)
+
+app.UseSwagger();
+At this point, you can spin up your application and view the generated Swagger JSON at "/swagger/v1/swagger.json."
+
+Optionally insert the swagger-ui middleware if you want to expose interactive documentation, specifying the Swagger JSON endpoint(s) to power it from.
+
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+});
+Now you can restart your application and check out the auto-generated, interactive docs at "/swagger".
+
 
 **установка cli**
 
