@@ -13,7 +13,7 @@ https://dev.mysql.com/doc/connector-net/en/connector-net-entityframework-core-sc
       }
 
 ## Сканируем базу и генерируем код модели
-- dotnet ef dbcontext scaffold "server=localhost;port=3306;user=root;password=test;database=lofy;" MySql.Data.EntityFrameworkCore -o Models -f
+- dotnet ef dbcontext scaffold "server=localhost;port=3306;user=root;password=test;database=lofy;" MySql.Data.EntityFrameworkCore -o Models -f -DataAnnotations
 
 ## Устанавливаем генератор кода
 - dotnet tool install --global dotnet-aspnet-codegenerator
